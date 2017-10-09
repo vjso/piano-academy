@@ -1,0 +1,8 @@
+$defaultFontSize : 30px;
+
+$themeColor1 : #0000cc;
+
+/*! screen sizes */
+$largeScreen: 1020px; /*! 1020px and above */
+$MediumScreen: 768px; /*! 768px - 1019px */
+$smallScreen: 530px;  /*! 530px - 767px */
