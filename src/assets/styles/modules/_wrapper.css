@@ -4,7 +4,10 @@ reusable block for adding padding to the edges of the content
 .wrapper {
     padding-left: 1rem;
     padding-right: 1rem;
-    max-width: 1200px;
+
+    /*! padding left and right of 1rem ie 16+16 32 pixels has caused the max width of the wrapper to decrease by 32pixels.
+    So whenever the padding left and right are changed, update the max-width accordingly */
+    max-width: 1232px;
     margin-left: auto;
     margin-right: auto;
     /*! hide any overflown elements like rows with gutters */
@@ -20,5 +23,15 @@ reusable block for adding padding to the edges of the content
     .wrapper {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    /*! wrapper with bottom margin */
+    &--b-margin {
+
+        margin-bottom: 1rem;
+        @mixin atSmall {
+            margin-bottom: 3.875rem;
+        }
+        
     }
 }
