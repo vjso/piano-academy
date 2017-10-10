@@ -1,7 +1,15 @@
+/*!
+reusable block to divide webpage into sections
+*/
+
 .page-section {
     padding: 1.2rem 0;
 
     @mixin atMedium {
         padding: 4.5rem 0;
+    }
+
+    &--themeColor {
+        background-color: $themeColor5;
     }
 }
