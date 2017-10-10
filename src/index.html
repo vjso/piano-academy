@@ -43,7 +43,13 @@
     </header>
 
     <div class="large-hero">
-        <img src="assets/images/light-background-242236-1920x640.jpeg">
+        <!--<img src="assets/images/dark-background-176851-largeScreen-1920x640.jpeg">-->
+        <picture>
+            <source media="(min-width: 1381px)" srcset="assets/images/light-background-242236-largeScreen-1920x640.jpeg 1920w, assets/images/light-background-242236-largeScreen-hidpi-3840x1308.jpeg 3840w">
+            <source media="(min-width: 991px)" srcset="assets/images/light-background-242236-mediumScreen-1380x654.jpeg 1380w, assets/images/light-background-242236-mediumScreen-hidpi-2760x1308.jpeg 2760w">
+            <source media="(min-width: 640px)" srcset="assets/images/light-background-242236-smallScreen-990x654.jpeg 990w, assets/images/light-background-242236-smallScreen-hidpi-1980x1308.jpeg 1980w">
+            <img srcset="assets/images/light-background-242236-smallerScreen-640x654.jpeg 640w, assets/images/light-background-242236-smallerScreen-hidpi-1280x1308.jpeg 1280w" alt="light colored wall with textured surface">
+        </picture>
         <div class="large-hero__text-content-center-align">
             <h1 class="large-hero__title">Your clarity.</h1>
             <h2 class="large-hero__subtitle">One trip away.</h2>
