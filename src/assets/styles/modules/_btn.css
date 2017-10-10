@@ -1,3 +1,7 @@
+/*! 
+the links are displayed as buttons
+*/ 
+
 .btn {
     background-color: $fontColorDark;
     color: $fontColorLight;

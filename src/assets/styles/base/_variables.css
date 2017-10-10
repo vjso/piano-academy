@@ -13,5 +13,5 @@ $themeColor6: #e67e22; /* pumpkin */
 
 /*! screen sizes */
 $largeScreen: 1020px; /*! 1020px and above */
-$MediumScreen: 768px; /*! 768px - 1019px */
+$mediumScreen: 768px; /*! 768px - 1019px */
 $smallScreen: 530px;  /*! 530px - 767px */
