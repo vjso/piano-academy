@@ -1,0 +1,45 @@
+/*! 
+ the main landing page block with background image and text content overlay
+ styling: image full width
+ text content: overlay at the center of the image
+*/
+
+.large-hero{
+    position: relative;
+
+    &__text-content-center-align {
+        position: absolute;
+
+        /*! position the element in the center of the bg image horizontally*/
+        width: 100%;
+        text-align: center;
+        /*! position the element in the center of the bg image vertically*/
+        top: 50%;
+        transform: translateY(-50%);
+
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 4.8rem;
+        margin: 0;
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        font-size: 2.9rem;
+        margin: 0;
+    }
+
+    &__description {
+        color: $fontColorLight;
+        font-size: 1.875rem;
+        font-weight: 100;
+        /*! text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;*/
+        text-shadow: 2px 2px 0 rgba(0, 0, 0, .1);
+
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

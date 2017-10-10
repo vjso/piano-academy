@@ -1,3 +1,9 @@
-html {
-    font-size: $defaultFontSize;
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $fontColorDark;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
