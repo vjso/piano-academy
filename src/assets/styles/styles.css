@@ -3,7 +3,8 @@
 @import "base/_mixins";
 @import "base/_global";
 @import "modules/_sprite";
-@import "modules/_large-hero.css";
+@import "modules/_large-hero";
+@import "modules/_btn";
 
 /*! This comment will be removed! */
 /* This comment will be kept! */

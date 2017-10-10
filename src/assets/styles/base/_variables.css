@@ -4,11 +4,12 @@ $fontColorDark: #34495e; /*Wet Asphalt*/
 $fontColorMedium: #7f8c8d; /*Asbestos*/
 $fontColorLight: #ecf0f1; /*clouds*/
 
-$themeColor1: #16a085; /*green sea*/
-$themeColor2: #27ae60; /*nephritis*/
-$themeColor3: #2980b9; /*belize hole*/
-$themeColor4: #8e44ad; /*wisteria*/
-$themeColor5: #2c3e50;; /*mignight blue*/
+$themeColor1: #16a085; /* green sea */
+$themeColor2: #27ae60; /* nephritis */
+$themeColor3: #2980b9; /* belize hole */
+$themeColor4: #8e44ad; /* wisteria */
+$themeColor5: #2c3e50; /* mignight blue */
+$themeColor6: #e67e22; /* pumpkin */
 
 /*! screen sizes */
 $largeScreen: 1020px; /*! 1020px and above */
