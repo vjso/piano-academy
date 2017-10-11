@@ -25,6 +25,19 @@ reusable block to place elements in a row
         margin-right: -65px;
     }
 
+    /*! add bottom margin for small screens until the screen size hits medium. 
+    No bottom margin for medium or larger screens */
+    &--b-margin-until-medium {
+        margin-bottom: 1rem;
+
+        @media atMedium {
+            &--b-margin-until-medium {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
     @mixin atMedium {
 
         &__4-column-on-medium-screen {
