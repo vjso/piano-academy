@@ -2,54 +2,54 @@
 /* To use the icons in the html use .icon and .icon--<icon-file-name> class selectors */
 
     .icon {
-        background-image: url('/assets/images/sprites/sprite-afe87bf8.svg');
+        background-image: url('/assets/images/sprites/sprite-d5ee902c.svg');
     }
 
     .no-svg .icon {
-        background-image: url('/assets/images/sprites/sprite-afe87bf8.png');
+        background-image: url('/assets/images/sprites/sprite-d5ee902c.png');
     }
 
-    .icon--calenar-with-clock {
+    .icon--calendar-with-clock {
         width: 42px;
         height: 42px;
         background-position: 0 0;
     }
-    .icon--contact-mail {
+    .icon--comment-square {
         width: 42px;
         height: 42px;
         background-position: 50% 0;
     }
-    .icon--contact-phone {
+    .icon--contact-mail {
         width: 42px;
         height: 42px;
         background-position: 0 50%;
     }
-    .icon--email {
+    .icon--contact-phone {
         width: 42px;
         height: 42px;
         background-position: 50% 50%;
     }
-    .icon--facebook {
+    .icon--email {
         width: 42px;
         height: 42px;
         background-position: 100% 0;
     }
-    .icon--music-note {
+    .icon--facebook {
         width: 42px;
         height: 42px;
         background-position: 100% 50%;
     }
-    .icon--piano {
+    .icon--music-note {
         width: 42px;
         height: 42px;
         background-position: 0 100%;
     }
-    .icon--star {
+    .icon--piano {
         width: 42px;
         height: 42px;
         background-position: 50% 100%;
     }
-    .icon--twitter {
+    .icon--star {
         width: 42px;
         height: 42px;
         background-position: 100% 100%;
