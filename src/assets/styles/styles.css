@@ -15,6 +15,8 @@
 @import "modules/_testimonial";
 @import "modules/_shadow";
 @import "modules/_site-footer";
+@import "modules/_site-header";
+@import "modules/_primary-nav";
 
 /*! This comment will be removed! */
 /* This comment will be kept! */

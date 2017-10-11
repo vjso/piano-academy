@@ -2,55 +2,55 @@
 /* To use the icons in the html use .icon and .icon--<icon-file-name> class selectors */
 
     .icon {
-        background-image: url('/assets/images/sprites/sprite-d5ee902c.svg');
+        background-image: url('/assets/images/sprites/sprite-de387a46.svg');
     }
 
     .no-svg .icon {
-        background-image: url('/assets/images/sprites/sprite-d5ee902c.png');
+        background-image: url('/assets/images/sprites/sprite-de387a46.png');
     }
 
     .icon--calendar-with-clock {
         width: 42px;
         height: 42px;
-        background-position: 0 0;
+        background-position: 76.27118644067797% 0;
     }
     .icon--comment-square {
         width: 42px;
         height: 42px;
-        background-position: 50% 0;
+        background-position: 76.27118644067797% 40.38461538461539%;
     }
     .icon--contact-mail {
         width: 42px;
         height: 42px;
-        background-position: 0 50%;
+        background-position: 0 100%;
     }
     .icon--contact-phone {
         width: 42px;
         height: 42px;
-        background-position: 50% 50%;
+        background-position: 23.728813559322035% 100%;
     }
     .icon--email {
         width: 42px;
         height: 42px;
-        background-position: 100% 0;
+        background-position: 47.45762711864407% 100%;
     }
     .icon--facebook {
         width: 42px;
         height: 42px;
-        background-position: 100% 50%;
+        background-position: 71.1864406779661% 100%;
     }
     .icon--music-note {
         width: 42px;
         height: 42px;
-        background-position: 0 100%;
+        background-position: 100% 0;
     }
     .icon--piano {
         width: 42px;
         height: 42px;
-        background-position: 50% 100%;
+        background-position: 100% 40.38461538461539%;
     }
-    .icon--star {
-        width: 42px;
-        height: 42px;
-        background-position: 100% 100%;
+    .icon--studio-conti-logo-light {
+        width: 135px;
+        height: 104px;
+        background-position: 0 0;
     }

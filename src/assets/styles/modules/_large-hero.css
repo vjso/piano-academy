@@ -21,6 +21,10 @@
         /*! position the element in the center of the bg image vertically*/
         top: 50%;
         transform: translateY(-50%);
+        padding-top: 88px; /*! to offset the sticky header */ 
+        @mixin atMedium {
+            padding-top: 60px;
+        }
 
     }
 
