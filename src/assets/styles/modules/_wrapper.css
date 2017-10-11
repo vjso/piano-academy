@@ -34,4 +34,28 @@ reusable block for adding padding to the edges of the content
         }
         
     }
+
+    /*! for smallscreens, we want very little padding so that can content can use as much space as possible 
+        This is used in the testimonial section.
+    */
+    &--no-padding-until-medium {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+
+        @mixin atMedium {
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+        }
+    }
+
+    /*! although the class says no-padding until large, we want some padding for small and medium screens */
+    &--no-padding-until-large {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+
+        @mixin atLarge {
+            padding-left: 1.2rem;
+            padding-right: 1.2rem;
+        }
+    }
 }

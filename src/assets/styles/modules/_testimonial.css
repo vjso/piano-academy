@@ -1,0 +1,43 @@
+.testimonial {
+    background-color: rgba(255, 255, 255, .95);
+    padding: 0 1.8125rem 1px 1.8125rem;
+
+    /*! avoid testimonial photo overlapping with upper testimonial on mobile screen */
+    /*! we also need this margin bottom for the bottom shadow to appear */
+    margin-bottom: 60px;
+
+    &__photo {
+        border-radius: 50px;
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto -50px auto;
+        position: relative;
+        top: -50px;
+        border: 6px solid rgba(255, 255, 255, .9);
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    &__subtitle {
+        color: $themeColor6;
+        text-align: center;
+        font-weight: 400;
+        font-size: 0.9375rem;
+        margin: .25rem 1rem 1rem 1rem;
+    }
+
+    &--last {
+        /*! This class is to remove the bottom margin from the last testimonial block */
+        margin-bottom: 1rem;
+        @mixin atSmall {
+            margin-bottom: 60px;
+        }
+
+    }
+}

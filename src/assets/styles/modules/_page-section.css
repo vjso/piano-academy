@@ -6,11 +6,33 @@ reusable block to divide webpage into sections
     padding: 1.2rem 0;
 
     @mixin atMedium {
-        padding: 4.5rem 0;
+        padding: 3rem 0;
     }
 
     &--themeColor {
         background-color: $themeColor5;
+    }
+
+    &--testimonials {
+        background-color: $themeColor7;
+
+        @mixin atMedium {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('/assets/images/music-score-534283-1920x1280.jpeg') ;
+            background-size: cover;
+        }
+        
+    }
+
+    /*! This class is to avoid 3 column layout on medium screen for testimonial section.
+    There isn't enough space on small and medium screens for testimonials to have three columns.
+    So add padding only for large screens
+    */
+    &--no-padding-until-large {
+        padding-bottom: 0;
+        @mixin atLarge {
+            padding: 3rem 0; 
+        }
+
     }
 
 }

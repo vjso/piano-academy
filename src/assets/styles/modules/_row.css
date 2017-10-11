@@ -15,6 +15,10 @@ reusable block to place elements in a row
     */
     &--gutters > div {
         padding-right: 65px;
+        @mixin atMedium{
+            padding-right: 65px;
+        }
+        
     }
 
     &--gutters--large > div {
@@ -28,6 +32,10 @@ reusable block to place elements in a row
         }
     }
 
+    &--gutters > div {
+        padding-right: 65px;
+    }
+
 
     
     /*! Adding gutters to columns will cause the last column also to have the gutter to the right, which is not needed.
@@ -35,11 +43,23 @@ reusable block to place elements in a row
         (overflow by an amount of gutter width) and letting the parent hide the overflow
     */
     &--gutters {
+
         margin-right: -65px;
+
+        @mixin atMedium {
+            margin-right: -65px;
+        }
+        
     }
 
     &--gutters-large {
         margin-right: -100px;
+    }
+
+    &--gutters-small {
+        @mixin atSmall{
+            margin-right: -40px;
+        }
     }
 
     /*! add bottom margin for small screens until the screen size hits medium. 
@@ -81,6 +101,67 @@ reusable block to place elements in a row
         /*! column section slightly smaller than 8 columns */
         &__8-column-on-medium-screen--smaller {
             width: 63%;
+        }
+    }
+
+
+    @mixin atLarge {
+        
+        &__4-column-on-large-screen {
+            float: left;
+            width: 33.33%;
+    
+        }
+
+        /*! column section slightly larger than 4 columns */
+        &__4-column-on-large-screen--larger {
+            width: 37%
+        }
+
+        &__6-column-on-large-screen {
+            float: left;
+            width: 50%
+        }
+    
+        &__8-column-on-large-screen {
+            float: left;
+            width: 66.66%;
+        }
+
+        /*! column section slightly smaller than 8 columns */
+        &__8-column-on-large-screen--smaller {
+            width: 63%;
+        }
+    }
+
+            
+    &--t-padding {
+        padding-top: 30px;
+    }
+
+    /*! equal height for all elements in this row using flexbox */
+    &--equal-height-at-medium {
+        @mixin atMedium {
+            display: flex;
+        }
+
+        /*! target the columns in this row, ie the div elements */
+        & > div {
+            float: none;
+            display: flex;
+        }
+    }
+
+    /*! equal height for all elements in this row using flexbox */
+    &--equal-height-at-large {
+        @mixin atLarge {
+            display: flex;
+        }
+
+        /*! target the columns in this row, ie the div elements */
+        & > div {
+            float: none;
+            display: flex;
         }
     }
     
