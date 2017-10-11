@@ -16,6 +16,19 @@ reusable block to place elements in a row
     &--gutters > div {
         padding-right: 65px;
     }
+
+    &--gutters--large > div {
+        @mixin atMedium {
+            padding-right: 30px;
+            padding-left: 20px;
+        }
+        @mixin atLarge {
+            padding-right: 75px;
+            padding-left: 50px;
+        }
+    }
+
+
     
     /*! Adding gutters to columns will cause the last column also to have the gutter to the right, which is not needed.
         This can be handled by letting the row with gutter overflow its parent using a -ve margin
@@ -23,6 +36,10 @@ reusable block to place elements in a row
     */
     &--gutters {
         margin-right: -65px;
+    }
+
+    &--gutters-large {
+        margin-right: -100px;
     }
 
     /*! add bottom margin for small screens until the screen size hits medium. 
@@ -49,6 +66,11 @@ reusable block to place elements in a row
         /*! column section slightly larger than 4 columns */
         &__4-column-on-medium-screen--larger {
             width: 37%
+        }
+
+        &__6-column-on-medium-screen {
+            float: left;
+            width: 50%
         }
     
         &__8-column-on-medium-screen {
