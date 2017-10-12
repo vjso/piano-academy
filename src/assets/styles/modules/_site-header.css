@@ -5,12 +5,22 @@
     padding: 10px 0;
     transition: background-color .3s ease-out;
 
+    /*! on mobile screens, the site header will have a dark background for visibility */
     &--is-expanded {
         background-color: rgba($fontColorDark, .55);
     }
 
     @mixin atMedium {
-        background-color: rgba($fontColorDark, .3);
+        position: fixed; /*! sticky header */
+        /* background-color: rgba($fontColorDark, .3); */
+        background-color: rgba($themeColor8, .3);
+
+        
+
+        &--dark {
+            /* background-color: rgba($fontColorDark, .8); */
+            background-color: rgba($themeColor8, 1);
+        }
     }
     
 
@@ -27,10 +37,17 @@
         top: 0;
         left: 50%;
         transform: translateX(-50%) scale(.7);
+        transition: transform .2s ease-out;
         transform-origin: 50% 0;
         @mixin atMedium {
             left: 15%;
             transform: 0;
+
+            /*! shrink the logo when we scroll, ie, when waypoint is hit and dark header is added */
+            .site-header--dark & {
+                transform: scale(.50);
+                transform-origin: 50% 0;
+            }
         }
 
         /* @mixin atLarge {

@@ -24,10 +24,13 @@ module/Person.js:
     export default Person;
 */;
 
+import $ from 'jquery';
+
 import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
-import $ from 'jquery';
+import StickyHeader from './modules/StickyHeader';
 
 var mobileMenu = new MobileMenu();
 new RevealOnScroll($(".feature-item"), "85%"); // feature items
 new RevealOnScroll($(".testimonial"), "70%"); //testimonials
+var stickyHeader = new StickyHeader();
