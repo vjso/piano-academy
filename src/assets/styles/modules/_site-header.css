@@ -61,5 +61,9 @@
             /* display: block; */
             padding-right: 0;
         }
+
+        &--is-visible {
+            display: block;
+        }
     }
 }

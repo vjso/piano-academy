@@ -44,6 +44,7 @@
     "webpack": "^3.6.0"
   },
   "dependencies": {
+    "jquery": "^3.2.1",
     "lazysizes": "^4.0.0-rc4",
     "normalize.css": "^7.0.0",
     "picturefill": "^3.0.2"

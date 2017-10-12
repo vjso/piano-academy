@@ -23,3 +23,7 @@ module/Person.js:
 
     export default Person;
 */;
+
+import MobileMenu from './modules/MobileMenu';
+
+var mobileMenu = new MobileMenu();
