@@ -45,16 +45,71 @@
     }
 
     &__menu-icon {
-        background-color: $fontColorDark;
+        /* background-color: $fontColorDark; */
+        /* background-color: $themeColor6; */
         width: 20px;
-        height: 20px;
+        height: 19px;
         position: absolute;
         top: 10px;
         right: 10px;
         z-index: 10;
 
+        /*! hamburger menu */
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 3px;
+            background-color: $themeColor6;
+            transform-origin: 0 0;
+            transition: transform .3s ease-out;
+
+        }
+
+        &__middle {
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 20px;
+            height: 3px;
+            background-color: $themeColor6;
+            transition: all .3s ease-out;
+            transform-origin: 0 50%; /*! the middle bar should shrink from centre to left */
+
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 20px;
+            height: 3px;
+            background-color: $themeColor6;
+            transform-origin: 0 100%;
+            transition: transform .3s ease-out;
+
+        }
+
         @mixin atMedium {
             display: none;
+        }
+    }
+
+    &__menu-icon--close-x {
+        &::before {
+            transform: rotate(45deg) scaleX(1.25);
+        }
+
+        .site-header__menu-icon__middle {
+            opacity: 0; /*! remove this middle bar */
+            transform: scaleX(0); /*! shrink the middle bar to 0 size horizontally gradually */
+        }
+
+        &::after {
+            transform: rotate(-45deg) scaleX(1.25) translateY(1px);
         }
     }
 
