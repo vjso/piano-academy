@@ -2,11 +2,11 @@
 /* To use the icons in the html use .icon and .icon--<icon-file-name> class selectors */
 
     .icon {
-        background-image: url('/assets/images/sprites/sprite-de387a46.svg');
+        background-image: url('/assets/images/sprites/sprite-cb72f1a9.svg');
     }
 
     .no-svg .icon {
-        background-image: url('/assets/images/sprites/sprite-de387a46.png');
+        background-image: url('/assets/images/sprites/sprite-cb72f1a9.png');
     }
 
     .icon--calendar-with-clock {
@@ -48,6 +48,11 @@
         width: 42px;
         height: 42px;
         background-position: 100% 40.38461538461539%;
+    }
+    .icon--star {
+        width: 42px;
+        height: 42px;
+        background-position: 100% 80.76923076923077%;
     }
     .icon--studio-conti-logo-light {
         width: 135px;

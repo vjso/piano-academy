@@ -1,0 +1,15 @@
+/*! 
+    The elements which have this class reveal-item will initially will be hidden.
+    The modifier classes are added using script based on certain trigger event.
+    For example when a page is scrolled, we can reveal these gradually using css transition and waypoints library.
+*/
+
+.reveal-item {
+    opacity: 0;
+    transition: opacity 1.5s ease-out;
+
+    &--is-visible {
+        opacity: 1;
+
+    }
+}
