@@ -6,10 +6,11 @@
 
 .reveal-item {
     opacity: 0;
-    transition: opacity 1.5s ease-out;
+    transition: all 1.5s ease-out;
+    transform: scale(1.15); /*! initially items will be little larger and when revealed, will zoom out to normal size gradually */
 
     &--is-visible {
         opacity: 1;
-
+        transform: scale(1);
     }
 }
