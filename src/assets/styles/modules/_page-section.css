@@ -17,8 +17,11 @@ reusable block to divide webpage into sections
         background-color: $themeColor7;
 
         @mixin atMedium {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('/assets/images/music-score-534283-1920x1280.jpeg') ;
-            background-size: cover;
+            /*! the element should have lazyloaded class along with page-section__testimonials; only then set bg image*/
+            &.lazyloaded {
+                background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('/assets/images/music-score-534283-1920x1280.jpeg') ;
+                background-size: cover;
+            }
         }
         
     }

@@ -91,7 +91,7 @@
             
             <div class="wrapper wrapper--medium wrapper--b-margin">
                 <!-- only on screens with width 970px or more, use the image width as 976px, else use 100% of viewport width ie single column layout -->
-                <img sizes="(min-width: 970px) 976px, 100vw" srcset="assets/images/music-sheet-104084-lowres-565x244.jpeg 565w, assets/images/music-sheet-104084-976x421.jpeg 976w, assets/images/music-sheet-104084-hidpi-1952x842.jpeg 1952w" alt="music sheet.">
+                <img class="lazyload" sizes="(min-width: 970px) 976px, 100vw" data-srcset="assets/images/music-sheet-104084-lowres-565x244.jpeg 565w, assets/images/music-sheet-104084-976x421.jpeg 976w, assets/images/music-sheet-104084-hidpi-1952x842.jpeg 1952w" alt="music sheet.">
             </div>
 
             <div class="row row--gutters">
@@ -99,9 +99,9 @@
                 <div class="row__4-column-on-medium-screen row__4-column-on-medium-screen--larger  row--b-margin-until-medium">
 
                     <picture>
-                        <source sizes="404px" media="(min-width: 1024px)" srcset="assets/images/classical-guitar-closeup-210876-404x531.jpeg 404w, assets/images/classical-guitar-closeup-210876-hidpi-808x1062.jpeg 808w">
-                        <source sizes="382px" media="(min-width: 768px)" srcset="assets/images/classical-guitar-closeup-210876-portrait-382x870.jpeg 382w, assets/images/classical-guitar-closeup-210876-portrait-hidpi-764x1740.jpeg 764w">
-                        <img srcset="assets/images/classical-guitar-closeup-210876-landscape-800x491.jpeg 800w, assets/images/classical-guitar-closeup-210876-landscape-hidpi-1600x982.jpeg 1600w" alt="classical guitar">
+                        <source sizes="404px" media="(min-width: 1024px)" data-srcset="assets/images/classical-guitar-closeup-210876-404x531.jpeg 404w, assets/images/classical-guitar-closeup-210876-hidpi-808x1062.jpeg 808w">
+                        <source sizes="382px" media="(min-width: 768px)" data-srcset="assets/images/classical-guitar-closeup-210876-portrait-382x870.jpeg 382w, assets/images/classical-guitar-closeup-210876-portrait-hidpi-764x1740.jpeg 764w">
+                        <img class="lazyload" data-srcset="assets/images/classical-guitar-closeup-210876-landscape-800x491.jpeg 800w, assets/images/classical-guitar-closeup-210876-landscape-hidpi-1600x982.jpeg 1600w" alt="classical guitar">
                     </picture>
                     
                 </div>
@@ -186,7 +186,7 @@
         </div>
     </div>
 
-    <div id="testimonials" class="page-section page-section--testimonials" data-matching-link="#testimonials-link">
+    <div id="testimonials" class="page-section page-section--testimonials lazyload" data-matching-link="#testimonials-link">
         <div class="bg-image-overlay">
         </div>   
         <div class="wrapper wrapper--no-padding-until-medium">
@@ -201,7 +201,7 @@
                 <div class="row__4-column-on-medium-screen">
                     <div class="testimonial shadow">
                         <div class="testimonial__photo">
-                            <img src="assets/images/smiley-face100.png" alt="student">
+                            <img class="lazyload" src="assets/images/smiley-face100.png" alt="student">
                         </div>
                         
                         <h3 class="testimonial__title">Student</h3>

@@ -4,6 +4,7 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 
 class StickyHeader {
     constructor() {
+        this.lazyImages = $(".lazyload");
         this.siteHeader = $(".site-header");
         this.primaryNav = $(".primary-nav");
         this.siteHeaderButtonContainer = $(".site-header__btn-container");
@@ -14,7 +15,14 @@ class StickyHeader {
         this.createHeaderWaypoint();
         this.cratePageSectionWaypoints(); // for highlighting menu item when page is scrolled to that section
         this.addSmoothScrolling();
+        this.refreshWaypoints();
 
+    }
+
+    refreshWaypoints(){
+        this.lazyImages.on('load', function(){
+            Waypoint.refreshAll();
+        });
     }
 
     addSmoothScrolling() {
