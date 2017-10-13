@@ -10,6 +10,7 @@
 
     &__image {
         display: block;
+        height: 90vh;
     }
 
     &__text-content-center-align {

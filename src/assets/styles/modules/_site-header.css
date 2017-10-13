@@ -14,12 +14,12 @@
         position: fixed; /*! sticky header */
         /* background-color: rgba($fontColorDark, .3); */
         background-color: rgba($themeColor8, .3);
-
-        
+        height: 87px;    
 
         &--dark {
             /* background-color: rgba($fontColorDark, .8); */
             background-color: rgba($themeColor8, 1);
+            height: 62px;
         }
     }
     
@@ -27,6 +27,14 @@
     &__btn-container {
         @mixin atMedium {
             float: right;
+            padding-top: 10px;
+        }
+    }
+
+    &__btn-container--sticky-header {
+        @mixin atMedium {
+            float: right;
+            padding-top: 0;
         }
     }
 
@@ -46,7 +54,7 @@
             /*! shrink the logo when we scroll, ie, when waypoint is hit and dark header is added */
             .site-header--dark & {
                 transform: scale(.50);
-                transform-origin: 50% 0;
+                transform-origin: 0 0;
             }
         }
 
