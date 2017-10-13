@@ -13,7 +13,7 @@
     @mixin atMedium {
         position: fixed; /*! sticky header */
         /* background-color: rgba($fontColorDark, .3); */
-        background-color: rgba($themeColor8, .3);
+        background-color: rgba($themeColor8, .7);
         height: 87px;    
 
         &--dark {

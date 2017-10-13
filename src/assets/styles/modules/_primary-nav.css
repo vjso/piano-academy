@@ -47,6 +47,10 @@
             background-color: transparent;
             margin-top: 14px;
 
+            &.is-current-link {
+                color: $themeColor6;
+            }
+
         }
     }
 
