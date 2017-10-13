@@ -17,6 +17,10 @@ reusable block for adding padding to the edges of the content
         max-width: 976px;
     }
 
+    &--narrow {
+        max-width: 500px;
+    }
+
     /*! wrapper inside a wrapper should not have any padding , 
     this is for the img in the mid page section
     */

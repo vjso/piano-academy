@@ -1,0 +1,65 @@
+.modal {
+    position: fixed;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, .94);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.2);
+    transition: all .3s ease-out;
+
+    &--is-visible {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+
+    &__form {
+        text-align: center;
+    }
+
+    a {
+        
+        color: $themeColor6;
+        text-decoration: none;
+
+        @mixin atMedium {
+            font-size: 1.5rem;
+        }
+      }
+
+    p {
+        /* font-size: 1.5rem; */
+        text-align: center;
+
+        @mixin atMedium {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__facebook-icon {
+        position: relative;        
+        top: 12px;
+
+        @mixin atMedium{
+            margin-left: 5px;
+        }
+    }
+
+    &__close-x {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        font-size: 2rem;
+        transform: scaleX(1.2);
+        transform-origin: 100% 0;
+        cursor: pointer;
+
+        &:hover {
+            color: $themeColor6;
+        }
+    }
+}

@@ -40,7 +40,7 @@
 
             <div class="site-header__menu-content">
                 <div class="site-header__btn-container">
-                     <a href="#" class="btn">Get in Touch</a>
+                     <a href="#" class="btn open-modal">Get in Touch</a>
                 </div>
                 <nav class="primary-nav primary-nav--pull-right">
                     <ul>
@@ -62,10 +62,10 @@
     <div class="large-hero">
         <!--<img src="assets/images/dark-background-176851-largeScreen-1920x640.jpeg">-->
         <picture>
-            <source media="(min-width: 1381px)" srcset="assets/images/light-background-242236-largeScreen-1920x640.jpeg 1920w, assets/images/light-background-242236-largeScreen-hidpi-3840x1308.jpeg 3840w">
-            <source media="(min-width: 991px)" srcset="assets/images/light-background-242236-mediumScreen-1380x654.jpeg 1380w, assets/images/light-background-242236-mediumScreen-hidpi-2760x1308.jpeg 2760w">
-            <source media="(min-width: 640px)" srcset="assets/images/light-background-242236-smallScreen-990x654.jpeg 990w, assets/images/light-background-242236-smallScreen-hidpi-1980x1308.jpeg 1980w">
-            <img class="large-hero__image" srcset="assets/images/light-background-242236-smallerScreen-640x654.jpeg 640w, assets/images/light-background-242236-smallerScreen-hidpi-1280x1308.jpeg 1280w" alt="light colored wall with textured surface">
+            <source media="(min-width: 1381px)" srcset="assets/images/piano-keys-164935-largeScreen-1920x640.jpeg 1920w, assets/images/piano-keys-164935-largeScreen-hidpi-3840x1308.jpeg 3840w">
+            <source media="(min-width: 991px)" srcset="assets/images/piano-keys-164935-mediumScreen-1380x654.jpeg 1380w, assets/images/piano-keys-164935-mediumScreen-hidpi-2760x1308.jpeg 2760w">
+            <source media="(min-width: 640px)" srcset="assets/images/piano-keys-164935-smallScreen-990x654.jpeg 990w, assets/images/piano-keys-164935-smallScreen-hidpi-1980x1308.jpeg 1980w">
+            <img class="large-hero__image" srcset="assets/images/piano-keys-164935-smallerScreen-640x654.jpeg 640w, assets/images/piano-keys-164935-smallerScreen-hidpi-1280x1308.jpeg 1280w" alt="light colored wall with textured surface">
         </picture>
         <div class="large-hero__text-content-center-align">
             <div class="wrapper">
@@ -73,7 +73,7 @@
                     <h2 class="large-hero__subtitle">To last a lifetime</h2>
                     <p class="large-hero__description">Flexible Piano and Music lessons</p>
                     <p>
-                        <a href="#" class="btn btn--themeColor btn--large">Get Started Today</a>
+                        <a href="#" class="btn btn--themeColor btn--large open-modal">Get Started Today</a>
                     </p>
             </div>
             
@@ -251,10 +251,30 @@
         <div class="wrapper">
             <p>
                 <span class="site-footer__text"> Copyright &copy; 2017 Studio Conti. All rights reserved.</span>
-                <a href="#" class="btn btn--themeColor">Get in Touch</a>
+                <a href="#" class="btn btn--themeColor open-modal">Get in Touch</a>
             </p>
         </div>
     </footer>
+
+    <div class="modal">
+        <h2 class="section-title section-title--dark">
+            <!-- <img class="section-title__icon"  src="assets/images/icons/comment-square.svg">Testimonials</h2> -->
+            <span class="section-title__icon icon icon--mail"></span>
+            Get in <strong>Touch</strong>
+        </h2>
+
+        <div class="wrapper wrapper--narrow">
+            
+            <p >Contact us @ <a href="tel:1-562-867-5309">1-123-456-7890</a></p>
+            <p >Visit us on our <a href="#"><span class="section-title__icon icon icon--facebook modal__facebook-icon"></span></a> page</p>
+
+            <br><br>
+            <p class="modal__form" >We will have a form here for enquiries</p>
+        </div>
+
+        <div class="modal__close-x">X</div>
+        
+    </div>
 
     <!-- build:js /assets/scripts/App.js -->
     <script src="/temp/scripts/App.js"></script>

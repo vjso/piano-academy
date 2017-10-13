@@ -18,6 +18,7 @@
 @import "modules/_site-header";
 @import "modules/_primary-nav";
 @import "modules/_reveal-item";
+@import "modules/_modal";
 
 /*! This comment will be removed! */
 /* This comment will be kept! */

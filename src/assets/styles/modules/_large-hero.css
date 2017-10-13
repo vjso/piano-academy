@@ -11,6 +11,12 @@
     &__image {
         display: block;
         height: 90vh;
+        opacity: 0.3;
+        
+        /* @mixin atMedium {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('/assets/images/music-score-534283-1920x1280.jpeg') ;
+            background-size: cover;
+        } */
     }
 
     &__text-content-center-align {
@@ -52,7 +58,7 @@
     }
 
     &__description {
-        color: $fontColorLight;
+        color: $themeColor5;
         font-size: 1.2rem;
         font-weight: 100;
         /*! text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;*/
